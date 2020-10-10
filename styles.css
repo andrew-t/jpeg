@@ -1,0 +1,34 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+canvas {
+	display: none;
+}
+button {
+	font-size: 1em;
+	padding: 0.5em 1.5em;
+	margin: 0.5em;
+	border-radius: 2em;
+	background: #cef;
+	color: black;
+	border: none;
+}
+button:hover {
+	background: #478;
+	color: white;
+	cursor: pointer;
+}
+label {
+	padding: 1em 0;
+	display: flex;
+	max-width: 35em;
+	margin: 1em auto;
+}
+label span {
+	flex: auto 1 1;
+	text-align: left;
+}
+body:not(.advanced) .advanced {
+	display: none;
+}

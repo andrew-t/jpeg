@@ -1,44 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>The Garbageulator</title>
 	<script src="script.js"></script>
-	<style type="text/css">
-		body {
-			font-family: sans-serif;
-			text-align: center;
-		}
-		canvas {
-			display: none;
-		}
-		button {
-			font-size: 1em;
-			padding: 0.5em 1.5em;
-			margin: 0.5em;
-			border-radius: 2em;
-			background: #cef;
-			color: black;
-			border: none;
-		}
-		button:hover {
-			background: #478;
-			color: white;
-			cursor: pointer;
-		}
-		label {
-			padding: 1em 0;
-			display: flex;
-			max-width: 35em;
-			margin: 1em auto;
-		}
-		label span {
-			flex: auto 1 1;
-			text-align: left;
-		}
-		body:not(.advanced) .advanced {
-			display: none;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<p>Prepate your photos for Facebook with</p>
@@ -56,11 +21,11 @@
 	</label>
 	<label class="advanced">
 		<span>Minimum JPEG quality</span>
-		<input type="range" id="min-quality" value="0.05" min="0" max="1" step="0.01">
+		<input type="range" id="min-quality" value="0.0" min="0" max="1" step="0.01">
 	</label>
 	<label class="advanced">
 		<span>Maximum JPEG quality</span>
-		<input type="range" id="max-quality" value="0.6" min="0" max="1" step="0.01">
+		<input type="range" id="max-quality" value="0.5" min="0" max="1" step="0.01">
 	</label>
 	<label class="advanced">
 		<span>Minimum scale</span>
