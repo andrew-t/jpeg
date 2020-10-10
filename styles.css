@@ -29,6 +29,7 @@ label span {
 	flex: auto 1 1;
 	text-align: left;
 }
-body:not(.advanced) .advanced {
+body:not(.advanced) .advanced
+body:not(.has-image) .needs-image {
 	display: none;
 }

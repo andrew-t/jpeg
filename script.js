@@ -102,6 +102,7 @@ async function readFile() {
 				image.style.height = `${sImage.height * scale}px`;
 			};
 			sImage.src = image.src = `data:${file.type};base64,${bufferToBase64(img)}`;
+			document.body.classList.add('has-image');
 			break;
 		}
 	}
